@@ -1,0 +1,29 @@
+cabal-version:      2.4
+name:               Conway-Game-of-Life
+version:            0.1.0.0
+
+synopsis: GoL
+
+description: A simple implementation Conway's Game Of Life for the Terminal
+
+license:            MIT
+author:             S3NP41-v
+maintainer:         s3np41@discord
+
+
+category:           Game
+extra-source-files: CHANGELOG.md
+
+executable Conway-Game-of-Life
+    main-is:          Main.hs
+
+    build-depends:    base ^>=4.16.4.0
+                    , random
+                    , unbounded-delays
+                    , optparse-applicative
+                    , directory
+                    , aeson
+                    , bytestring
+
+    hs-source-dirs:   app
+    default-language: Haskell2010
